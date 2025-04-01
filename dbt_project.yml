@@ -40,3 +40,10 @@ models:
     # Applies to all files under models/example/
     example:
       +materialized: table
+    stages:
+      materialized: view
+      snowflake_warehouse: compute_wh
+    marts:
+      materialized: table
+      snowflake_warehouse: compute_wh
+
