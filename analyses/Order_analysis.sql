@@ -1,0 +1,8 @@
+select
+    order_key,
+    sum(extended_price) as gross_item_sales_amount,
+    avg(discount_percentage) as avg_item_discount_percentage_amount,
+from
+    {{ ref('dim_order_items') }}
+group by
+    order_key 
