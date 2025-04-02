@@ -11,4 +11,5 @@
 
     select * from  {{ref('fact_orders')}}
 
-{% endsnapshot %}
+{% endsnapshot %} 
+
